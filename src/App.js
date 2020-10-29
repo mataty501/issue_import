@@ -1,25 +1,46 @@
 import logo from './logo.svg';
 import './App.css';
+//import { useParams } from "react-router-dom";
 
 function App() {
+  //let { id } = useParams();
+  const productData = [
+    {
+      id: 1,
+      name: 'NIKE Liteforce Blue Sneakers',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie.',
+      status: 'Available'
+
+    },
+    {
+      id: 2,
+      name: 'Stylised Flip Flops and Slippers',
+      description: 'Mauris finibus, massa eu tempor volutpat, magna dolor euismod dolor.',
+      status: 'Out of Stock'
+
+    },
+    {
+      id: 3,
+      name: 'ADIDAS Adispree Running Shoes',
+      description: 'Maecenas condimentum porttitor auctor. Maecenas viverra fringilla felis, eu pretium.',
+      status: 'Available'
+    },
+    {
+      id: 4,
+      name: 'ADIDAS Mid Sneakers',
+      description: 'Ut hendrerit venenatis lacus, vel lacinia ipsum fermentum vel. Cras.',
+      status: 'Out of Stock'
+    },
+
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="products">
+      <ul>
+
+      </ul>
     </div>
-  );
+  )
 }
 
 export default App;
